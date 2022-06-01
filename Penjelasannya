@@ -1,0 +1,24 @@
+# UTS_SAINSDATA
+UTSSAINSDATA_MochammadAzrielRizkySyahputra_13119763_3KA18
+* Langkah - langlah code program
+Langkah pertama sebelum menulis satu baris kode adalah memberikan deskripsi di komentar tentang apa yang dilakukan kode tersebut.
+Setelah itu Import impor paket /libraries untuk memudahkan penulisan program.
+Selanjutnya memuat data saham Google (GOOG) yang saya dapatkan dari finance.yahoo.com ke dalam sebuah variabel bernama ‘df’ kependekan dari data frame. Ubah dataset dengan rentang waktu dari 1 September 2021 – 30 September 2021
+Dapatkan dan cetak baris data terakhir. Harga Tutup Penyesuaian
+Buat kembali bingkai data dengan mendapatkan semua data kecuali baris terakhir yang akan saya gunakan untuk menguji model nanti, dan simpan data baru dengan baris terakhir hilang kembali ke 'df'.
+Buat variabel yang akan digunakan sebagai kumpulan data independen dan dependen dengan menyetelnya sama dengan daftar kosong.
+Dapatkan semua baris dari kolom Tanggal simpan ke dalam variabel yang disebut 'df_days' dan dapatkan semua baris dari kolom Harga Tutup Penyesuaian dan simpan datanya ke dalam variabel.
+Buat kumpulan data independen 'X' dan simpan data dalam variabel 'hari'. Buat kumpulan data dependen 'y' dan simpan data dalam variabel 'adj_close_prices'. Keduanya dapat dilakukan dengan menambahkan data ke masing-masing daftar.
+Untuk kumpulan data independen yang kami inginkan hanya hari dari tanggal, jadi saya menggunakan fungsi split untuk mendapatkan hanya hari dan melemparkannya ke bilangan bulat sambil menambahkan data ke daftar hari.
+setelah itu print dah terlihat outputnya
+Selanjutnya membuat dan melatih 3 model Support Vector Regression (SVR) yang berbeda dengan tiga kernel berbeda untuk melihat mana yang berkinerja terbaik.
+aya akan memplot model pada grafik untuk melihat mana yang paling cocok dan mengembalikan prediksi hari itu.
+Model terbaik dari grafik di atas tampaknya adalah Linier.
+The RBF SVR predicted: [2692.62407997]
+The Linear SVR predicted: [2821.50287093]
+The Polynomial SVR predicted: [2794.36362954]
+terakhir sekarang saya akan memprediksi harga yang memberi model nilai atau hari 30 dan output seperti di atas
+Nomor 4. Sebutkan model mana yang paling baik untuk menentukan prediksi pada tanggal 29 September 2021! Linear, Polynomial, atau RBF?
+Paling baik menurut saya yaitu menggunakan linier, karena garis Linier sempurna dibandingkan yang lain. Kalau RBF garis yang tidak sempurna sama juga dengan Polynomual garisnya tidak sempurna.
+Nomor 5. Jelaskan setiap langkah run yang sudah anda buat
+Untuk no 5 sudah saya jelaskan di setiap kode program
